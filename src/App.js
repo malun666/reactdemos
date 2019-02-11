@@ -4,10 +4,9 @@ import './App.css';
 // import Welcome from './components/Welcome';
 // import JSXDemo from './components/JSXDemos';
 // import PropDemo from './components/PropDemo';
-
-import ReactLife from './components/ReactLife';
-
-import Clock from './components/Clock';
+// import Clock from './components/Clock';
+// import ReactLife from './components/ReactLife';
+import EventDemo from './components/EventDemo';
 
 class App extends Component {
   constructor(opt) {
@@ -36,7 +35,6 @@ class App extends Component {
     return (
       <div className="App">
         <h1>aicoder.com </h1>
-        <hr/>
         {/* 函数组件 */}
         {/* <Welcome name="laoma, aicoder.com" /> */}
 
@@ -45,11 +43,11 @@ class App extends Component {
 
         {/* <PropDemo kk="aicoder.com from the props" /> */}
 
-        {
-          this.state.isShowLife && <ReactLife kk={ this.state.kk } />
-        }
+        {/* this.state.isShowLife && <ReactLife kk={ this.state.kk } /> */}
         <hr/>
-        <Clock /> 
+        {/* <Clock />  */}
+
+        <EventDemo />
       </div>
     );
   }
