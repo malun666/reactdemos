@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class PropDemo extends Component {
 
   // 定义组件内部私有的状态（数据）
+  // 自动合并所有状态，单独进行修改。
   constructor(opt) {
     super(opt);
 
@@ -25,6 +26,14 @@ class PropDemo extends Component {
         return {num: preState.num + 1}
       });
     }, 1000)
+  }
+
+  componentDidUpdate() {
+    console.log('upedate')
+  }
+
+  componentWillUpdate() {
+    console.log('will update')
   }
 
   render () {
