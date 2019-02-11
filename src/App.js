@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import Welcome from './components/Welcome';
-import JSXDemo from './components/JSXDemos';
-import PropDemo from './components/PropDemo';
+// import Welcome from './components/Welcome';
+// import JSXDemo from './components/JSXDemos';
+// import PropDemo from './components/PropDemo';
 
 import ReactLife from './components/ReactLife';
+
+import Clock from './components/Clock';
+
 class App extends Component {
   constructor(opt) {
     super(opt);
@@ -46,6 +48,8 @@ class App extends Component {
         {
           this.state.isShowLife && <ReactLife kk={ this.state.kk } />
         }
+        <hr/>
+        <Clock /> 
       </div>
     );
   }
