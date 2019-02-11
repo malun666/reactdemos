@@ -4,7 +4,7 @@ import './App.css';
 
 import Welcome from './components/Welcome';
 import JSXDemo from './components/JSXDemos';
-
+import PropDemo from './components/PropDemo';
 class App extends Component {
 
   render() {
@@ -16,7 +16,9 @@ class App extends Component {
         <Welcome name="laoma, aicoder.com" />
 
         {/* 类组件 */}
-        <JSXDemo></JSXDemo>
+        <JSXDemo />
+
+        <PropDemo kk="aicoder.com from the props" />
       </div>
     );
   }
