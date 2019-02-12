@@ -9,7 +9,8 @@ import './App.css';
 // import EventDemo from './components/EventDemo';
 
 // import NewsList from './components/NewsList';
-import FormDemo from './components/FormDmoe';
+// import FormDemo from './components/FormDmoe';
+import FormMulDemo from './components/FormMulDemo';
 
 class App extends Component {
   constructor(opt) {
@@ -52,7 +53,8 @@ class App extends Component {
 
         {/* <EventDemo /> */}
         {/* <NewsList /> */}
-        <FormDemo />
+        {/* <FormDemo /> */}
+        <FormMulDemo />
       </div>
     );
   }

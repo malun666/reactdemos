@@ -13,13 +13,13 @@ class FromDemo extends Component {
 
   handlerNameChange = (e) => {
     this.setState({
-      Name: e.target.value
+      [e.target.name]: e.target.value
     });
   };
 
   handlerEmailChange = (e) => {
     this.setState({
-      Mail: e.target.value
+      [e.target.name]: e.target.value
     });
   }
 
