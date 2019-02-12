@@ -8,7 +8,8 @@ import './App.css';
 // import ReactLife from './components/ReactLife';
 // import EventDemo from './components/EventDemo';
 
-import NewsList from './components/NewsList';
+// import NewsList from './components/NewsList';
+import FormDemo from './components/FormDmoe';
 
 class App extends Component {
   constructor(opt) {
@@ -50,7 +51,8 @@ class App extends Component {
         {/* <Clock />  */}
 
         {/* <EventDemo /> */}
-        <NewsList />
+        {/* <NewsList /> */}
+        <FormDemo />
       </div>
     );
   }
