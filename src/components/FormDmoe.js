@@ -5,7 +5,8 @@ class FromDemo extends Component {
     super(opt);
     this.state = {
       Name: '',
-      Mail: ''
+      Mail: '',
+      Remark: ''
     };
   }
 
@@ -21,12 +22,26 @@ class FromDemo extends Component {
     });
   }
 
+  handlerRemarkChange = e => {
+    this.setState({
+      Remark: e.target.value
+    });
+  }
+
   render () {
     return (
       <div>
-        <p>
+        <p 
+          onClick={(e) => { this.setState(preState => {
+            return {
+              Remark: preState.Remark + '1'
+            }
+          })}}
+        >
           hi  { this.state.Name }！
           email to : { this.state.Mail }
+          <br/>
+          remark: { this.state.Remark }
         </p>
         <hr/>
         <form>
@@ -40,6 +55,7 @@ class FromDemo extends Component {
                     type="text" 
                     id="txtName" 
                     name="Name" 
+                    value={this.state.Name}
                   />
                 </td>
               </tr>
@@ -50,13 +66,25 @@ class FromDemo extends Component {
                     id="txtMail" 
                     type="text" 
                     name="Mail" 
+                    value={this.state.Mail}
                     onChange={this.handlerEmailChange}
                   />
                 </td>
               </tr>
+              <tr>
+                <td><label htmlFor="txtRemark">备注：</label></td>
+                <td>
+                 <textarea
+                  id="txtRemark"
+                  name="Remark"
+                  value={ this.state.Remark }
+                  onChange={this.handlerRemarkChange}
+                 >
+                 </textarea>
+                </td>
+              </tr>
             </tbody>
           </table>
-
         </form>
       </div>
     )
