@@ -1,0 +1,24 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "aicoder.com 线上实习开班了！1",
+      "isDel": false
+    },
+    {
+      "id": 2,
+      "title": "aicoder.com 线上实习开班了！2",
+      "isDel": false
+    },
+    {
+      "id": 3,
+      "title": "aicoder.com 线上实习开班了！3",
+      "isDel": false
+    },
+    {
+      "id": 4,
+      "title": "aicoder.com 线上实习开班了！4",
+      "isDel": false
+    }
+  ]
+}

@@ -6,7 +6,9 @@ import './App.css';
 // import PropDemo from './components/PropDemo';
 // import Clock from './components/Clock';
 // import ReactLife from './components/ReactLife';
-import EventDemo from './components/EventDemo';
+// import EventDemo from './components/EventDemo';
+
+import NewsList from './components/NewsList';
 
 class App extends Component {
   constructor(opt) {
@@ -47,7 +49,8 @@ class App extends Component {
         <hr/>
         {/* <Clock />  */}
 
-        <EventDemo />
+        {/* <EventDemo /> */}
+        <NewsList />
       </div>
     );
   }
