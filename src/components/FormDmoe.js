@@ -6,7 +6,8 @@ class FromDemo extends Component {
     this.state = {
       Name: '',
       Mail: '',
-      Remark: ''
+      Remark: '',
+      Province: 1
     };
   }
 
@@ -28,6 +29,16 @@ class FromDemo extends Component {
     });
   }
 
+  handlerProChange = e => {
+    this.setState({
+      Province: e.target.value
+    });
+  }
+
+  handleFootballChange = e => {
+    console.log(e.target.checked);
+  }
+
   render () {
     return (
       <div>
@@ -42,6 +53,8 @@ class FromDemo extends Component {
           email to : { this.state.Mail }
           <br/>
           remark: { this.state.Remark }
+          <br/>
+          Provice： { this.state.Province }
         </p>
         <hr/>
         <form>
@@ -81,6 +94,37 @@ class FromDemo extends Component {
                   onChange={this.handlerRemarkChange}
                  >
                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td><label htmlFor="Province">省：</label></td>
+                <td>
+                  <select 
+                    id="Province"
+                    name="Province" 
+                    onChange={this.handlerProChange}
+                    value={this.state.Provicne}
+                  >
+                    <option value="1">北京</option>
+                    <option value="2">上海</option>
+                    <option value="3">河北</option>
+                    <option value="4">山东</option>
+                    <option value="5">山西</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label htmlFor="Province">爱好：</label></td>
+                <td>
+                  <label>
+                    篮球：
+                    <input type="checkbox" name="BasketBall" id="BasketBall"/>
+                  </label>
+                  <br/>
+                  <label>
+                    足球：
+                    <input onChange={this.handleFootballChange} type="checkbox" name="Football" id="Football"/>
+                  </label>
                 </td>
               </tr>
             </tbody>
