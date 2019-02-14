@@ -14,6 +14,7 @@ import './App.css';
 // import FormSub from './components/FormSub';
 // import Greeting from './components/Greeting';
 import StateLifting from './components/StateLifting';
+import Dialog from './components/Dialog';
 
 class App extends Component {
   constructor(opt) {
@@ -60,7 +61,16 @@ class App extends Component {
         {/* <FormMulDemo /> */}
         {/* <FormSub /> */}
         {/* <Greeting /> */}
-        <StateLifting />
+        {/* <StateLifting /> */}
+        <Dialog 
+          title="添加用户的对话框！" 
+          footer={
+            <div>footer</div>
+          }
+        >
+          <p>这是一个子嵌套的内容！</p>
+          <StateLifting />
+        </Dialog>
       </div>
     );
   }
