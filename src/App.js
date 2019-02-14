@@ -12,7 +12,8 @@ import './App.css';
 // import FormDemo from './components/FormDmoe';
 // import FormMulDemo from './components/FormMulDemo';
 // import FormSub from './components/FormSub';
-import Greeting from './components/Greeting';
+// import Greeting from './components/Greeting';
+import StateLifting from './components/StateLifting';
 
 class App extends Component {
   constructor(opt) {
@@ -58,7 +59,8 @@ class App extends Component {
         {/* <FormDemo /> */}
         {/* <FormMulDemo /> */}
         {/* <FormSub /> */}
-        <Greeting />
+        {/* <Greeting /> */}
+        <StateLifting />
       </div>
     );
   }
