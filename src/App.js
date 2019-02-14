@@ -15,6 +15,8 @@ import './App.css';
 // import Greeting from './components/Greeting';
 import StateLifting from './components/StateLifting';
 import Dialog from './components/Dialog';
+import JSXFun from './components/JSXFun';
+import PropChildren from './components/PropChildren';
 
 class App extends Component {
   constructor(opt) {
@@ -70,7 +72,20 @@ class App extends Component {
         >
           <p>这是一个子嵌套的内容！</p>
           <StateLifting />
+          <JSXFun cname="Msg"></JSXFun>
         </Dialog>
+
+        <PropChildren>
+          <StateLifting></StateLifting>
+          sfs
+          <StateLifting></StateLifting>
+          <hr/>
+          {true}
+          {false}
+          null: {null}
+          {undefined}
+          <hr/>
+        </PropChildren>
       </div>
     );
   }
