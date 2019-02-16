@@ -80,6 +80,7 @@ class App extends Component {
           sfs
           <StateLifting></StateLifting>
           <hr/>
+          {/* 布尔类型、null、undefined不会被显示到页面上！ */}
           {true}
           {false}
           null: {null}
