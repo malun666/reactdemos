@@ -8,6 +8,7 @@ class DangerouslyHTML extends Component {
         <div> demo </div>
       `,
       domDanger: {
+        // 绑定对象： 必须有__html属性。属性值就绑定页面上去的内容。
         __html: `
           <div>danger htmls</div>
           <p>aicoder.com</p>
