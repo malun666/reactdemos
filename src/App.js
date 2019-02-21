@@ -23,7 +23,8 @@ import './App.css';
 // import RefDemo from './components/RefDemo';
 
 // import RefTrans from './components/RefTrans';
-import DomVsJSX from './components/DomVsJSX';
+// import DomVsJSX from './components/DomVsJSX';
+import DangerouselyHTML from './components/DangerouslyHTML';
 
 class App extends Component {
   constructor(opt) {
@@ -106,7 +107,8 @@ class App extends Component {
         </RefDemo> */}
 
         {/* <RefTrans></RefTrans> */}
-        <DomVsJSX></DomVsJSX>
+        {/* <DomVsJSX></DomVsJSX> */}
+        <DangerouselyHTML></DangerouselyHTML>
       </div>
     );
   }
