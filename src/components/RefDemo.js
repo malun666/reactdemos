@@ -7,6 +7,7 @@ import Clock from './Clock';
  * 1. 需要直接操作dom元素，执行dom的api的情况，比如：直接控制按钮获取焦点
  * 2. 父组件中需要直接操作子组件的实例
  * 3. 引用第三方库，需要直接操作dom的。
+ * 4. 需要出发强制动画
  */
 
 class RefDemo extends Component {

@@ -19,8 +19,11 @@ import './App.css';
 // import PropChildren from './components/PropChildren';
 
 // import PropCheckDemo from './components/PropCeckDemo';
-import DefaultPropDemo from './components/DefaultPropDemo';
-import RefDemo from './components/RefDemo';
+// import DefaultPropDemo from './components/DefaultPropDemo';
+// import RefDemo from './components/RefDemo';
+
+import RefTrans from './components/RefTrans';
+
 class App extends Component {
   constructor(opt) {
     super(opt);
@@ -96,10 +99,12 @@ class App extends Component {
           <p>aicoder.com</p>
         </PropCheckDemo> */}
 
-        <DefaultPropDemo kname={2}></DefaultPropDemo>
+        {/* <DefaultPropDemo kname={2}></DefaultPropDemo>
         <RefDemo>
-          
-        </RefDemo>
+
+        </RefDemo> */}
+
+        <RefTrans></RefTrans>
       </div>
     );
   }
