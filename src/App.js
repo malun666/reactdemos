@@ -18,8 +18,8 @@ import './App.css';
 // import JSXFun from './components/JSXFun';
 // import PropChildren from './components/PropChildren';
 
-import PropCheckDemo from './components/PropCeckDemo';
-
+// import PropCheckDemo from './components/PropCeckDemo';
+import DefaultPropDemo from './components/DefaultPropDemo';
 class App extends Component {
   constructor(opt) {
     super(opt);
@@ -88,12 +88,14 @@ class App extends Component {
           {undefined}
           <hr/>
         </PropChildren> */}
-        <PropCheckDemo kname={'sss'} tid={4}>
+        {/* <PropCheckDemo kname={'sss'} tid={4}>
           <p>你好啊！</p>
         </PropCheckDemo>
         <PropCheckDemo kname="dd" tid={3}>
           <p>aicoder.com</p>
-        </PropCheckDemo>
+        </PropCheckDemo> */}
+
+        <DefaultPropDemo kname={2}></DefaultPropDemo>
       </div>
     );
   }
