@@ -22,7 +22,8 @@ import './App.css';
 // import DefaultPropDemo from './components/DefaultPropDemo';
 // import RefDemo from './components/RefDemo';
 
-import RefTrans from './components/RefTrans';
+// import RefTrans from './components/RefTrans';
+import DomVsJSX from './components/DomVsJSX';
 
 class App extends Component {
   constructor(opt) {
@@ -104,7 +105,8 @@ class App extends Component {
 
         </RefDemo> */}
 
-        <RefTrans></RefTrans>
+        {/* <RefTrans></RefTrans> */}
+        <DomVsJSX></DomVsJSX>
       </div>
     );
   }
