@@ -20,6 +20,7 @@ import './App.css';
 
 // import PropCheckDemo from './components/PropCeckDemo';
 import DefaultPropDemo from './components/DefaultPropDemo';
+import RefDemo from './components/RefDemo';
 class App extends Component {
   constructor(opt) {
     super(opt);
@@ -96,6 +97,9 @@ class App extends Component {
         </PropCheckDemo> */}
 
         <DefaultPropDemo kname={2}></DefaultPropDemo>
+        <RefDemo>
+          
+        </RefDemo>
       </div>
     );
   }
