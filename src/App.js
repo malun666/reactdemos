@@ -13,10 +13,12 @@ import './App.css';
 // import FormMulDemo from './components/FormMulDemo';
 // import FormSub from './components/FormSub';
 // import Greeting from './components/Greeting';
-import StateLifting from './components/StateLifting';
-import Dialog from './components/Dialog';
-import JSXFun from './components/JSXFun';
-import PropChildren from './components/PropChildren';
+// import StateLifting from './components/StateLifting';
+// import Dialog from './components/Dialog';
+// import JSXFun from './components/JSXFun';
+// import PropChildren from './components/PropChildren';
+
+import PropCheckDemo from './components/PropCeckDemo';
 
 class App extends Component {
   constructor(opt) {
@@ -64,7 +66,7 @@ class App extends Component {
         {/* <FormSub /> */}
         {/* <Greeting /> */}
         {/* <StateLifting /> */}
-        <Dialog 
+        {/* <Dialog 
           title="添加用户的对话框！" 
           footer={
             <div>footer</div>
@@ -73,20 +75,25 @@ class App extends Component {
           <p>这是一个子嵌套的内容！</p>
           <StateLifting />
           <JSXFun cname="Msg"></JSXFun>
-        </Dialog>
-
+        </Dialog> */}
+{/* 
         <PropChildren>
           <StateLifting></StateLifting>
           sfs
           <StateLifting></StateLifting>
           <hr/>
-          {/* 布尔类型、null、undefined不会被显示到页面上！ */}
           {true}
           {false}
           null: {null}
           {undefined}
           <hr/>
-        </PropChildren>
+        </PropChildren> */}
+        <PropCheckDemo kname={'sss'} tid={4}>
+          <p>你好啊！</p>
+        </PropCheckDemo>
+        <PropCheckDemo kname="dd" tid={3}>
+          <p>aicoder.com</p>
+        </PropCheckDemo>
       </div>
     );
   }
