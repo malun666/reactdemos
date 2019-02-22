@@ -10,6 +10,7 @@
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.4"
   },
+  "proxy": "http://yapi.demo.qunar.com/mock/24076",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

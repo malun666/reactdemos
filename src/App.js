@@ -26,6 +26,7 @@ import './App.scss';
 // import DomVsJSX from './components/DomVsJSX';
 import DangerouselyHTML from './components/DangerouslyHTML';
 import ContextDemo from './components/ContextDemo';
+import axios from 'axios';
 
 class App extends Component {
   constructor(opt) {
@@ -48,6 +49,12 @@ class App extends Component {
         isShowLife: false
       });
     }, 4000);
+
+    // 发送ajax请求 http://yapi.demo.qunar.com/mock/24076/api/message
+    axios.get('/api/message')
+    .then(res => {
+      console.log(res);
+    });
   }
 
   render() {
