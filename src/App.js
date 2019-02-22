@@ -54,6 +54,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>aicoder.com </h1>
+        <h3>{process.env.REACT_APP_AICODER}</h3>
+        <p>{process.env.NODE_ENV}</p>
+        <p>{process.env.REACT_APP_NOT_SECRET_CODE}</p>
+        {/* <img src="/1.png" alt=""/> */}
         {/* 函数组件 */}
         {/* <Welcome name="laoma, aicoder.com" /> */}
 
