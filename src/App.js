@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 
 // import Welcome from './components/Welcome';
 // import JSXDemo from './components/JSXDemos';
